@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  <!-- public/index.html (place before </body>) -->
+<svg width="0" height="0" style="position:absolute;">
+  <filter id="warp">
+    <feTurbulence 
+      id="turb" 
+      type="turbulence" 
+      baseFrequency="0.013" 
+      numOctaves="2" 
+      seed="2"
+      result="warp" 
+    />
+    <feDisplacementMap in="SourceGraphic" in2="warp" scale="60" />
+  </filter>
+
+  <!-- Animate the turbulence so the warp *swirls* -->
+  <animate 
+    xlink:href="#turb" 
+    attributeName="baseFrequency" 
+    values="0.010;0.020;0.012;0.014;0.010" 
+    dur="4s" 
+    repeatCount="indefinite" 
+  />
+</svg>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,30 @@
+[
+  {
+    "artist": "Ken Carson",
+    "track": "Yes",
+    "image": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02cfccf7cb249c22931be7fce0",
+    "url": "https://open.spotify.com/album/7IKQ2LS9mqFhGMB1M0IJrt?si=wv1lHmGxR9GnRI919zHaPQ",
+    "audio" : "/Ken Carson - yes (Official Audio).mp3"
+  },
+  {
+    "artist": "Playboi Carti",
+    "track": "Pop Out",
+    "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e026b219c8d8462bfe254a20469",
+    "url": "https://open.spotify.com/track/3j3SfV4hAcR4XjCvW393Gr?si=33c3938e01a9413b",
+    "audio" : "/Playboi Carti - POP OUT (Official Audio).mp3"
+  },
+  {
+    "artist": "Destroy Lonely",
+    "track": "Party n Get High",
+    "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02d7b2fb87f7316720422d2525",
+    "url": "https://open.spotify.com/track/2Q9XhrhksWBKyS5xh6cCqs?si=a927741d1ced4192",
+    "audio" : "/Destroy Lonely - party n get high (Official Audio).mp3"
+  },
+  {
+    "artist": "Osamason",
+    "track": "Habits",
+    "image": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f08f912956daaea9fa34cb76",
+    "url": "https://open.spotify.com/track/2XMwyntBTC3OgWE2N2wXoX?si=227d4af7fb614d50",
+    "audio" : "/OsamaSon - Habits [D_WvdbH_3hk].mp3"
+  }
+]

@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@font-face {
+    font-family: Slash Signature ;
+    src: url("./assets/fonts/SlashSignature.ttf");
+}
+@font-face {
+    font-family: Drip;
+    src: url("./assets/fonts/dripp.ttf");
+}
+@font-face {
+    font-family: Blood;
+    src: url("./assets/fonts/Blood.ttf");
+}
+@font-face {
+    font-family: Zombies;
+    src: url("./assets/fonts/ZOMBIES_REBORN.ttf");
+}
+@theme{
+--font-slash: Slash Signature, sans-serif;
+--font-drip: Drip, sans-serif;
+--font-blood: Blood, sans-serif;
+--font-zombies: Zombies, sans-serif;
+--animate-one:typing 2s steps(12) 1 normal both;
+@keyframes one {
+  from{
+      width:0;
+  }
+  to{
+    width:100%;
+  }
+  
+}
+@keyframes glitch {
+  0% { transform: none; }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: none; }
+}
+
+@keyframes glitchTop {
+  0% { clip: rect(0, 9999px, 0, 0); }
+  10% { clip: rect(0, 9999px, 10px, 0); transform: translate(2px, -2px); }
+  20% { clip: rect(0, 9999px, 0, 0); }
+  100% { clip: rect(0, 9999px, 0, 0); }
+}
+
+@keyframes glitchBottom {
+  0% { clip: rect(0, 9999px, 0, 0); }
+  10% { clip: rect(10px, 9999px, 9999px, 0); transform: translate(-2px, 2px); }
+  20% { clip: rect(0, 9999px, 0, 0); }
+  100% { clip: rect(0, 9999px, 0, 0); }
+}
+
+    
+}
+.glitch {
+  position: relative;
+  color: red;
+  animation: glitch 2s infinite;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.glitch::before {
+  animation: glitchTop 2s infinite;
+  color: red;
+}
+
+.glitch::after {
+  animation: glitchBottom 2s infinite;
+  color: whitesmoke;
+}
+
+
