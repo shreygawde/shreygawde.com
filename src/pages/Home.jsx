@@ -52,8 +52,8 @@ export default function Home() {
 
     const onTilt = (e) => {
       
-      const x = (e.gamma + 90) / 180; 
-      const y = (e.beta + 90) / 180;
+      let x = (e.gamma + 90) / 180; 
+      let y = (e.beta + 90) / 180;
       x = Math.max(0, Math.min(1, x));
       y = Math.max(0, Math.min(1, y));
       move(x, y);
