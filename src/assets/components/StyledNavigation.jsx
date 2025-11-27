@@ -37,7 +37,7 @@ export default function Navigation() {
         className={`
           flex ${isMobile ? "flex-nowrap whitespace-nowrap overflow-x-auto justify-center gap-5" : "gap-10"}
           font-bold 
-          text-lg md:text-xl
+          text-md md:text-xl
           tracking-wide
         `}
       >

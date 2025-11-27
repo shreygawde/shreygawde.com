@@ -16,7 +16,7 @@ export default function Navigation() {
         <ul className="
           flex flex-nowrap whitespace-nowrap overflow-x-auto justify-evenly items-center
           gap-1 md:gap-[80px] lg:gap-[120px]
-          py-4 text-2xl
+          py-4 sm:text-xl text-2xl
         ">
           {[
             { to: '/', label: 'Home' },
