@@ -18,7 +18,7 @@ export default function Home() {
         setMotionEnabled(true);
         window.removeEventListener("click", handler);
       };
-      // ask for permission on first tap anywhere
+      
       window.addEventListener("click", handler, { once: true });
       return () => window.removeEventListener("click", handler);
     }
@@ -36,7 +36,7 @@ export default function Home() {
 
     const layers = Array.from(wrapper.querySelectorAll(".par-layer"));
     const ease = 0.08;
-    const strength = isMobile ? 25 : 45;
+    const strength = isMobile ? 54 : 45;
 
     const move = (x, y) => {
       pointer.current.x = x;
@@ -51,9 +51,11 @@ export default function Home() {
     };
 
     const onTilt = (e) => {
-      // e.gamma (left-right) & e.beta (front-back)
-      const x = (e.gamma + 45) / 90; // normalize -45 to +45
-      const y = (e.beta + 45) / 90;
+      
+      const x = (e.gamma + 90) / 180; 
+      const y = (e.beta + 90) / 180;
+      x = Math.max(0, Math.min(1, x));
+      y = Math.max(0, Math.min(1, y));
       move(x, y);
     };
 
@@ -90,7 +92,7 @@ export default function Home() {
 
   return (
     <div ref={wrapperRef} className="relative w-full min-h-screen overflow-hidden bg-black">
-      {/* BACKGROUND PARALLAX */}
+      
       <img src="/Ascend.jpg" className="par-layer absolute inset-0 w-full h-full object-cover" data-depth="0.05" alt="bg" />
       <img src="/Ascend2.png" className="par-layer absolute inset-0 w-full h-full object-cover opacity-90" data-depth="0.15" alt="layer" />
       <div className="absolute inset-0 flex justify-center items-center z-[5] pointer-events-none">

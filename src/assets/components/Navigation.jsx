@@ -14,7 +14,7 @@ export default function Navigation() {
       {/* Navigation Links */}
       <div className="mx-auto px-4 absolute md:top-[-14px] z-20 w-full top-[-34px] ">
         <ul className="
-          flex flex-wrap justify-evenly items-center
+          flex flex-nowrap whitespace-nowrap overflow-x-auto justify-evenly items-center
           gap-1 md:gap-[80px] lg:gap-[120px]
           py-4 text-2xl
         ">

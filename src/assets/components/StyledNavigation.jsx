@@ -35,8 +35,8 @@ export default function Navigation() {
       {/* Links */}
       <div
         className={`
-          flex ${isMobile ? "flex-wrap justify-center gap-5" : "gap-10"}
-          font-bold font-semibold
+          flex ${isMobile ? "flex-nowrap whitespace-nowrap overflow-x-auto justify-center gap-5" : "gap-10"}
+          font-bold 
           text-lg md:text-xl
           tracking-wide
         `}
