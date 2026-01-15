@@ -2,22 +2,32 @@ import { Link } from 'react-router-dom';
 
 export default function Navigation() {
   return (
-  
-    <nav className="relative w-full overflow-visible z-50 border-t-11 border-red-700 sm:border-t-0">
-      {/* Blood Drip Image */}
+    <nav className="relative w-full z-50 border-t-4 border-red-700 sm:border-t-0">
+      
+      {/* Blood Drip */}
       <img
         src="hoty.gif"
         alt="Blood Drip"
         className="absolute left-0 w-full h-auto z-10 pointer-events-none"
       />
 
-      {/* Navigation Links */}
-      <div className="mx-auto px-4 absolute md:top-[-14px] z-20 w-full top-[-34px] ">
-        <ul className="
-          flex flex-nowrap whitespace-nowrap overflow-x-auto justify-evenly items-center
-          gap-1 md:gap-[80px] lg:gap-[120px]
-          py-4 sm:text-xl text-2xl
-        ">
+      {/* Links */}
+      <div className="absolute top-[-28px] z-20 w-full">
+        <ul
+          className="
+            flex items-center
+            px-6 py-4
+            gap-6
+
+            overflow-x-auto
+            justify-start
+
+            md:overflow-visible
+            md:justify-between
+
+            text-xl sm:text-2xl md:text-4xl lg:text-5xl
+          "
+        >
           {[
             { to: '/', label: 'Home' },
             { to: '/about', label: 'About' },
@@ -25,14 +35,12 @@ export default function Navigation() {
             { to: '/projects', label: 'Projects' },
             { to: '/contact', label: 'Contact' },
           ].map(({ to, label }) => (
-            <li key={to}>
+            <li key={to} className="flex-shrink-0">
               <Link
                 to={to}
                 className="
-                  text-xl md:text-4xl lg:text-5xl
-                  text-white
-                  font-slash
-                  px-2 md:px-4 py-1 md:py-2
+                  text-white font-slash
+                  px-2 py-1
                   hover:drop-shadow-[0_0_10px_rgba(255,255,255,1)]
                 "
               >
@@ -43,7 +51,5 @@ export default function Navigation() {
         </ul>
       </div>
     </nav>
-    
-
   );
 }

@@ -6,7 +6,7 @@ export default function Music() {
   const [rotation, setRotation] = useState([]);
   const [activeTrack, setActiveTrack] = useState(null);
 
-  // Fetch the rotation data once
+  
   useEffect(() => {
     fetch("/a.json")
       .then((res) => res.json())
@@ -14,7 +14,7 @@ export default function Music() {
       .catch((err) => console.error("Error loading rotation:", err));
   }, []);
 
-  // Three.js Visualizer
+  
   useEffect(() => {
     if (!activeTrack) return;
 
@@ -25,7 +25,7 @@ export default function Music() {
       0.1,
       1000
     );
-    // Dynamic scaling for mobile
+    
 
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -140,11 +140,14 @@ renderer.render(scene, camera);
             MUSIC
           </h1>
           <p className="max-w-xl mx-auto text-lg md:text-2xl opacity-80 mt-6">
-            Sonic distortion as art — where frequency becomes form.
+            Stuff im currently listening to and some of my favs.
+          </p>
+           <p className="max-w-xl mx-auto text-lg md:text-2xl opacity-80 mt-6">
+            (Click on one of the sogs in my current rotation and look at the background)
           </p>
         </section>
 
-        {/* CURRENT ROTATION */}
+        
         <section className="text-center my-12">
           <h2 className="font-art text-[8vw] md:text-[4vw] mb-6 text-[--color-accent]">
             CURRENT ROTATION
@@ -171,7 +174,7 @@ renderer.render(scene, camera);
           </div>
         </section>
       </div>
-      {/* INTERACTIVE REVIEW SECTION */}
+      
 <section className="relative z-10 mt-40 px-6 md:px-16 pb-20">
   <h2 className="font-art text-[8vw] md:text-[4vw] mb-10 text-center text-[--color-accent]">
     RATE / SOUND THOUGHTS
@@ -183,9 +186,9 @@ renderer.render(scene, camera);
       artist: "Ken Carson",
       image: "/Ken_Carson_-_A_Great_Chaos.jpg",
       review: [
-        "Ken Carson crafted a sonic world of chaos and control.",
-        "Every track bleeds confidence and distortion — a blueprint for modern rage music.",
-        "The production feels mechanical yet alive, blending metallic synths and bass-heavy fury.",
+        "Ken Carson's die lit imo really put him on the map",
+        "He showcases his styles in a more poiloished way (ironically along with the distortion)",
+        "This album is a great step up from whole lotta red in terms of going in full on distortion but still loghter than osamson and the underground.",
         "Top Song-Me n My Kup"
       ],
       rating: "8 / 10"
@@ -195,9 +198,9 @@ renderer.render(scene, camera);
       artist: "Playboi Carti",
       image: "/Playboi_Carti_-_Whole_Lotta_Red.png",
       review: [
-        "Carti’s magnum opus — an anti-pop statement built on pure energy.",
-        "It’s raw, unfiltered, and permanently altered how rage and punk coexist in sound.",
-        "It isn’t about perfection — it’s about possession. The aura itself is the art.",
+        "Carti’s magnum opus the best album ",
+        "Can't go into an important event without listening to stop breathing that shit will get you turnt for a hospital visit",
+        "each track is perfect(i dont like m3tamorphosis.",
         "Top Song-Stop Breathing"
       ],
       rating: "10 / 10"
@@ -212,7 +215,7 @@ renderer.render(scene, camera);
           open ? "p-6 scale-[1.02]" : "p-4 hover:scale-[1.01]"
         }`}
       >
-        {/* COLLAPSED HEADER */}
+        
         <div className="flex items-center gap-4">
           <img
             src={entry.image}
@@ -228,7 +231,7 @@ renderer.render(scene, camera);
           </span>
         </div>
 
-        {/* EXPANDED CONTENT */}
+        
         {open && (
           <div className="mt-6 space-y-4">
             {entry.review.map((p, idx) => (

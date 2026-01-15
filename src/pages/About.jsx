@@ -1,16 +1,14 @@
 export default function About() {
   return (
-    <div
-      className="relative min-h-screen flex flex-col items-center justify-center text-white overflow-hidden"
-     
-    >
-     
+    <div className="relative min-h-screen text-white overflow-hidden pt-24">
+      
+      {/* overlay */}
       <div className="absolute inset-0 bg-black/50 z-0" />
 
-     
-      <div className="relative z-10 text-center px-6">
+      {/* content */}
+      <div className="relative z-10 px-6 md:px-12 max-w-4xl">
         <h1
-          className="font-art text-[10vw] sm:text-[8vw] md:text-[6vw] select-none"
+          className="font-art text-[10vw] sm:text-[8vw] md:text-[5vw] select-none"
           style={{
             background:
               "linear-gradient(45deg, #00f0ff, #ff00ff, #ff0000, #00ffd9)",
@@ -21,12 +19,17 @@ export default function About() {
         >
           ABOUT ME
         </h1>
-        <p className="max-w-2xl mx-auto mt-6 text-lg opacity-80 leading-relaxed">
+
+        <p className="mt-6 text-lg opacity-80 leading-relaxed">
           Shrey Gawde
-          </p>
-          <p className="max-w-2xl mx-auto mt-6 text-lg opacity-80 leading-relaxed">
-          2nd Year Computer Engineering Learning developement and design. 
-          </p>
+        </p>
+
+        <p className="mt-2 text-lg opacity-80 leading-relaxed">
+          2nd Year Computer Engineering — learning development and design.
+        </p>
+        <p className="mt-2 text-lg opacity-80 leading-relaxed">React · Vite · Tailwind · FL Studio · UI Design · Sound Design · Branding
+</p>
+<p className="mt-2 text-lg opacity-80 leading-relaxed">1 deployed site 4 active projects</p>
       </div>
 
       <style>{`
@@ -38,3 +41,4 @@ export default function About() {
     </div>
   );
 }
+

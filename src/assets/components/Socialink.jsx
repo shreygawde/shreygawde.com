@@ -7,7 +7,7 @@ export default function Socialink({ icon, text, url, className = "" }) {
       className={`flex flex-col items-center justify-center relative ${className}`}
     >
       {/* BLOOD SPLATTER + ICON */}
-      <div className="relative w-[60vw] max-w-[400px] aspect-square mb-6">
+      <div className="relative w-[60vw] max-w-[440px] aspect-square mb-6">
         <img
           src="/blood.png"
           alt="Blood splatter"
@@ -21,7 +21,7 @@ export default function Socialink({ icon, text, url, className = "" }) {
       </div>
 
       {/* TEXT */}
-      <span className="font-slash text-[8vw] sm:text-[4vw] md:text-[2vw] bg-gradient-to-b from-[#4B0000] via-[#B10516] to-[#FF0000] bg-clip-text text-transparent drop-shadow-lg tracking-tight">
+      <span className="font-slash text-[8vw] sm:text-[4vw] md:text-[5vw] bg-gradient-to-b from-[#4B0000] via-[#B10516] to-[#FF0000] bg-clip-text text-transparent drop-shadow-lg tracking-tight mb-2">
         {text}
       </span>
     </a>

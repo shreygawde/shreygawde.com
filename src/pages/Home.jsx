@@ -36,7 +36,7 @@ export default function Home() {
 
     const layers = Array.from(wrapper.querySelectorAll(".par-layer"));
     const ease = 0.08;
-    const strength = isMobile ? 54 : 45;
+    const strength = isMobile ? 70 : 70;
 
     const move = (x, y) => {
       pointer.current.x = x;

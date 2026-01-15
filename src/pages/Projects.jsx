@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 export default function Projects() {
   const canvasRef = useRef(null);
 
-  // Neon grid background
+
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
@@ -49,7 +49,7 @@ export default function Projects() {
     return () => window.removeEventListener("resize", resize);
   }, []);
 
-  // Expandable main project card
+  
   const [open, setOpen] = useState(false);
 
   return (
@@ -69,7 +69,7 @@ export default function Projects() {
           This section will grow as new projects drop.
         </p>
 
-        {/* MAIN PROJECT */}
+        
         <div
           onClick={() => setOpen(!open)}
           className={`border border-white/10 rounded-2xl bg-black/40 backdrop-blur-md cursor-pointer transition-all duration-500 overflow-hidden ${
@@ -93,15 +93,11 @@ export default function Projects() {
               <p className="opacity-80 leading-relaxed">
                 A psychedelic-themed portfolio built with React, Vite, Tailwind, and Three.js.
                 Features parallax animations, audio-reactive visualizers, and responsive design.
-                Every page blends tech and art to form a distinct identity. The page has evolved over time by learning more concepts react had to offer.
-                Fun fact- The contact page has a different asthetic as it uses the first prototype style the whole site had just a reminder to where I started
+                The page has evolved over time by learning more concepts react had to offer.
+                Fun fact- The contact page has a different aesthetic as it uses the first prototype style the whole site had just a reminder to where I started
                 it uses a wvery whole lotta red inspired pallate with slash signature font and a blood drippin navbar with uv cursor and a gorey way to click on link.
                 Obviously there were many changes made later as visible.
                  
-              </p>
-              <p className="opacity-80 leading-relaxed">
-                The goal: to make code feel like motion design. Each section moves with purpose, 
-                balancing chaos and control — just like the music that inspires it.
               </p>
               <div className="flex justify-end items-center mt-4">
                 <span className="text-lg font-semibold text-[--color-accent]">
@@ -112,7 +108,7 @@ export default function Projects() {
           )}
         </div>
 
-        {/* IN PROGRESS SECTION */}
+        
         <h2 className="font-art text-[6vw] md:text-[3vw] mt-24 mb-10 text-[--color-accent]">
           IN DEVELOPMENT
         </h2>

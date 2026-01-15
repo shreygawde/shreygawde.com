@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* ==================== FONTS ==================== */
+
 @font-face { font-family: Slash Signature; src: url("./assets/fonts/SlashSignature.ttf"); }
 @font-face { font-family: Drip; src: url("./assets/fonts/dripp.ttf"); }
 @font-face { font-family: Blood; src: url("./assets/fonts/Blood.ttf"); }
@@ -16,7 +16,7 @@
   --color-accent: #ff004c;
 }
 
-/* ==================== ANIMATIONS ==================== */
+
 
 @keyframes hueShift {
   0% { filter: hue-rotate(0deg); }
