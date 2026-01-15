@@ -16,8 +16,10 @@ export default function Navigation() {
         <ul
           className="
             flex items-center
-            px-6 py-4
-            gap-6
+            px-5 py-4
+            md:px-6
+            gap-1
+            md:gap-6
 
             overflow-x-auto
             justify-start
@@ -25,7 +27,7 @@ export default function Navigation() {
             md:overflow-visible
             md:justify-between
 
-            text-xl sm:text-2xl md:text-4xl lg:text-5xl
+            text-xl sm:text-xl md:text-4xl lg:text-5xl
           "
         >
           {[
