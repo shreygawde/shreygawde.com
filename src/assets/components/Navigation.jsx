@@ -16,7 +16,7 @@ export default function Navigation() {
         <ul
           className="
             flex items-center
-            px-5 py-4
+            px-1 py-4
             md:px-6
             gap-1
             md:gap-6
