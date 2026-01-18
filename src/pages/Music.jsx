@@ -143,7 +143,7 @@ renderer.render(scene, camera);
             Stuff im currently listening to and some of my favs.
           </p>
            <p className="max-w-xl mx-auto text-lg md:text-2xl opacity-80 mt-6">
-            (Click on one of the sogs in my current rotation and look at the background)
+            (Click on one of the songs in my current rotation and look at the background)
           </p>
         </section>
 
